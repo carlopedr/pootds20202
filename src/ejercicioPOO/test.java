@@ -11,21 +11,11 @@ public class test {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        Bicicleta miBicicleta=new Bicicleta(20,42,13);
-        Bicicleta tuBicicleta=new Bicicleta(10,24,36);
-        System.out.println(miBicicleta.toString());
-        System.out.println(tuBicicleta.toString());
-        miBicicleta.acelerar();
-        System.out.println(miBicicleta.toString());
-        miBicicleta.frenar();
-        System.out.println(miBicicleta.toString());
-        miBicicleta.cambiarPlato(34);
-        miBicicleta.cambiarPiñon(24);
-        System.out.println(miBicicleta.toString());
-        miBicicleta.setVelocidadActual(18);
-        System.out.println(miBicicleta.toString());
-        miBicicleta.setPlatoActual(0);
-        System.out.println(miBicicleta.toString());
+        //Bicicleta miBicicleta=new Bicicleta();
+        //System.out.println(miBicicleta.toString());
+        
+        BicicletaMontaña miBM = new BicicletaMontaña(20,34,21,10);
+        System.out.println(miBM.toString());
         
         
         
