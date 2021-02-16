@@ -12,11 +12,16 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Complejo c1 = new Complejo(1,1);
-        Complejo c2 = new Complejo(2,2);
-        Complejo c3=c1.suma(c2);
-        System.out.println(c3.toString());
-        Complejo c4=c1.suma(c1,c2);
-        System.out.println(c4.toString());
+        Complejo comp1 = new Complejo(2,3);
+        Complejo comp2 = new Complejo(4,-5);
+        Complejo comp3=comp1.suma(comp2);
+        System.out.println(comp3.toString());
+        System.out.println(comp1.print());
+        System.out.println(comp2.print());
+        comp3=comp1.division(comp2);
+        System.out.println(comp3.print());
+        comp3=comp1.producto(comp2);
+        System.out.println(comp3.print());
+        
     }
 }

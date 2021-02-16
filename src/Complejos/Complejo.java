@@ -46,13 +46,42 @@ public class Complejo {
         return r;
     }
     
-    public Complejo suma(Complejo s1,Complejo s2){
-        Complejo r=new Complejo();
-        r.setpReal(s1.getpReal()+s2.getpReal());
-        r.setpImag(s1.getpImag()+s2.getpImag());
-        return r;
+    public Complejo resta(Complejo s) {
+        Complejo r = new Complejo();
+        r.setpReal(this.pReal - s.getpReal());
+        r.setpImag(this.pImag - s.getpImag());
+        return r; 
     }
+    public Complejo division(Complejo d){
+        Complejo r = new Complejo(); 
+        r.setpReal(((this.pReal * d.getpReal()) + 
+            (this.pImag * d.getpImag()))/
+            ((d.getpReal() * d.getpReal())+
+            (d.getpImag() * d.getpImag())));
+        r.setpImag((((this.pReal * d.getpImag()) - 
+            (this.pImag * d.getpReal()))/
+            ((d.getpReal() * d.getpReal())+(d.getpImag() * 
+            d.getpImag()))));
+        return r;
+    }    
+    
+    public Complejo producto(Complejo m){
+        Complejo p = new Complejo();
+        p.setpReal((this.pReal*m.getpReal())-(this.pImag*m.getpImag()));
+        p.setpImag((this.pReal*m.getpImag())+(this.pImag*m.getpReal()));
+        return p;
+        
+    }
+    public String print(){
+         String cad;
+         if (this.pImag < 0) {
+             cad = this.pReal + "  " + this.pImag + " i";
+         } else {
+             cad = this.pReal + " + " + this.pImag + " i";;
+         }
 
+         return cad;
+    }
     @Override
     public String toString() {
         return "Complejo{" + "pReal=" + pReal + ", pImag=" + pImag + '}';
