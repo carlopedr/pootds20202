@@ -12,11 +12,14 @@ package ejercicioPOO;
 public class BicicletaTandem extends Bicicleta{
     private int numAsientos;
 
-    public BicicletaTandem(int numAsientos, int velocidadActual, int platoActual, int piñonActual) {
+    public BicicletaTandem( int velocidadActual, int platoActual, int piñonActual, int numAsientos) {
         super(velocidadActual, platoActual, piñonActual);
         this.numAsientos = numAsientos;
     }
     
-    
+    @Override
+    public void acelerar(){
+        velocidadActual*=4;
+    }
     
 }

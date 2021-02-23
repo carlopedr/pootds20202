@@ -5,6 +5,8 @@ suspension)
  */
 package ejercicioPOO;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Usuario
@@ -26,6 +28,9 @@ public class BicicletaMontaña extends Bicicleta {
         return "BicicletaMonta\u00f1a{" + "velocidadActual=" + velocidadActual + ", platoActual=" + platoActual + ", pi\u00f1onActual=" + piñonActual + "suspension=" + suspension + '}';
     }
     
-    
+    @Override
+    public void acelerar(){
+        velocidadActual*=3;
+    }
     
 }

@@ -13,28 +13,19 @@ tuBicicleta
  */
 package ejercicioPOO;
 
-public class Bicicleta {
+public class Bicicleta extends Vehiculo {
     //Atributo de la clase
-    protected int velocidadActual;
+    //protected int velocidadActual;
     protected int platoActual;
     protected int piñonActual;
 
     //Constructor
     public Bicicleta(int velocidadActual, int platoActual, int piñonActual) {
-        this.velocidadActual = velocidadActual;
+        super(velocidadActual);
         this.platoActual = platoActual;
         this.piñonActual = piñonActual;
     }
-    /*
-Sobre la clase Bicicleta , implementa un constructor
-adicional que no recibe parámetros y que inicializa la
-velocidad actual a 0, y el plato actual y el piñón actual a
-1.    */
-    public Bicicleta(){
-        velocidadActual = 0;
-        platoActual = 1;
-        piñonActual = 1;
-    }
+      
     //Metodos get y set
 
     public int getVelocidadActual() {
