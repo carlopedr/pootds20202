@@ -13,19 +13,21 @@ public class test {
         //Bicicleta miBicicleta=new Bicicleta();
         //System.out.println(miBicicleta.toString());
         Bicicleta miB = new Bicicleta(15,42,25);
-        BicicletaMontaña miBM = new BicicletaMontaña(20,34,21,10);
-        BicicletaTandem miBT = new BicicletaTandem(19,24,30,2);
+        miB.imprimir();
         
-        Bicicleta misB[]={miB,miBM,miBT};
+        //BicicletaMontaña miBM = new BicicletaMontaña(20,34,21,10);
+        //BicicletaTandem miBT = new BicicletaTandem(19,24,30,2);
         
-        for (int i = 0; i < misB.length; i++) {
-            misB[i].acelerar();
-            System.out.println(misB[i].toString());
-        }
-        System.out.println("Despues de acelerar...");
-        System.out.println(miB.toString());
-        System.out.println(miBM.toString());
-        System.out.println(miBT.toString());
+        //Bicicleta misB[]={miB,miBM,miBT};
+        
+        //for (int i = 0; i < misB.length; i++) {
+        //    misB[i].acelerar();
+        //    System.out.println(misB[i].toString());
+        //}
+        //System.out.println("Despues de acelerar...");
+        //System.out.println(miB.toString());
+        //System.out.println(miBM.toString());
+        //System.out.println(miBT.toString());
     
         
     }

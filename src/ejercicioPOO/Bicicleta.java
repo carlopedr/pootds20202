@@ -13,7 +13,7 @@ tuBicicleta
  */
 package ejercicioPOO;
 
-public class Bicicleta extends Vehiculo {
+public class Bicicleta extends Vehiculo implements Imprimible {
     //Atributo de la clase
     //protected int velocidadActual;
     protected int platoActual;
@@ -100,6 +100,20 @@ valor por defecto, en concreto, 1.*/
     @Override
     public String toString() {
         return "Bicicleta{" + "velocidadActual=" + velocidadActual + ", platoActual=" + platoActual + ", pi\u00f1onActual=" + piñonActual + '}';
+    }
+
+    @Override
+    public void imprimir() {
+        System.out.println("Velocidad Actual:" + velocidadActual);
+        System.out.println("Plato Actual:" + platoActual);
+        System.out.println("Piñon Actual:" + piñonActual);
+        System.out.println("PI:" + PI);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public String getAtributos() {
+        return "Bicicleta{" + "velocidadActual=" + velocidadActual + ", platoActual=" + platoActual + ", pi\u00f1onActual=" + piñonActual + '}'; //To change body of generated methods, choose Tools | Templates.
     }
     
     
